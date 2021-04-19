@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Capitol Hill Attack, January 6th 2021</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet" />
+    <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #2dc4b2;
+}
+
+#console {
+  position: absolute;
+  width: 240px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.session {
+  margin-bottom: 20px;
+}
+
+.row {
+  height: 12px;
+  width: 100%;
+}
+
+.colors {
+  background: linear-gradient(to right, #000024, #0a02a2, #6e00db, #d60000, #f0ac00, #ffff29);
+  margin-bottom: 5px;
+}
+
+.label {
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+}
+
+    }</style>
+  </head>
+  
+  <body>
+    <div id="map"></div>
+    <div id="console">
+    <h1>Capitol Hill Attack, January 6th 2021</h1>
+    <p>
+      Data: 
+      <a 
+        href='https://github.com/acanthias13/legendary-octo-guacamole'>Geotagged video metadata from parler data dump</a> filtered to D.C., Jan. 6th 2021
+    </p>
+   
+<div class='session'>
+  <h2>Time:</h2>
+  <div class='row colors'>
+  </div>
+  <div class='row labels'>
+    <div class='label'>12pm</div>
+    <div class='label'>2pm</div>
+    <div class='label'>4pm</div>
+    <div class='label'>6pm</div>
+    <div class='label'>8pm</div>
+    <div class='label'>10pm</div>
+  </div>
+</div>
+
+<script>
+
+mapboxgl.accessToken = 'pk.eyJ1IjoibWljaGFlbHdhcmQiLCJhIjoiY2ttdjhybm5sMDJxbzJ2cGE0aGJ0amd1NSJ9.kl25FZDxxWAE4ikmqXJelQ';
+
+var map = new mapboxgl.Map({
+  container: 'map', 
+  style: 'mapbox://styles/michaelward/cknmgr8j90xqs17mgqmb0dijz',
+  center: [-77.024970, 38.895370], 
+  zoom: 13
+});
+
+
+</script>
+
+</body>
+</html>  
+
+
+
+
+
+
+
+
+
+
+
+
